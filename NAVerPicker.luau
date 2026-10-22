@@ -253,20 +253,20 @@ guiii.draggerV2 = function(ui, dragui)
 		dragui.Active = true;
 	end);
 end;
-local repo = "ltseverydayyou/Nameless-Admin";
+local repo = "Remember008862/Nameless-Admin";
 local br = "main";
 local chans = {
 	main = {
 		key = "main",
 		name = "Nameless Admin",
 		path = "Source.lua",
-		headRaw = "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"
+		headRaw = "https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/Source.lua"
 	},
 	test = {
 		key = "test",
 		name = "NA Testing",
 		path = "NA testing.lua",
-		headRaw = "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NA%20testing.lua"
+		headRaw = "https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/NA%20testing.lua"
 	}
 };
 local function getCommits(ch, n)

