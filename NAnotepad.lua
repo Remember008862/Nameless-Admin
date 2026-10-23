@@ -13,7 +13,7 @@ local __lt = (function()
 		error("Service resolver loader unavailable")
 	end
 	local resolver =
-		loader(game:HttpGet("https://ltseverydayyou.github.io/ServiceResolver.luau"), "@ServiceResolver.luau")
+		loader(game:HttpGet("https://raw.githubusercontent.com/Remember008862/Nameless-Admin/main/ServiceResolver.luau"), "@ServiceResolver.luau")
 	if type(resolver) ~= "function" then
 		error("Service resolver failed to compile")
 	end
